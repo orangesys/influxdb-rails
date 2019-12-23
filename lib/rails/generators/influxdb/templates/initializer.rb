@@ -2,10 +2,11 @@ InfluxDB::Rails.configure do |config|
   ## The only setting you actually need to update is the name of the
   ## database within the InfluxDB server instance. Don't forget to
   ## create this database as well.
-  config.client.database = "rails"
-  # config.client.hosts = ["localhost"]
-  # config.client.port = 8086
-  # config.client.jwt_token = "<orangesys_jwt_token>"
+  config.client.hosts = ["demo.i.orangesys.io"]
+  config.client.jwt_token = "<orangesys_jwt_token>"
+  config.client.database = "telegraf"
+  config.client.port = 443
+  config.client.use_ssl = true
 
   ## If you've setup user authentication (and activated it in the server
   ## config), you need to configure the credentials here.
