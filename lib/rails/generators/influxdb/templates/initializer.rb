@@ -5,7 +5,7 @@ InfluxDB::Rails.configure do |config|
   config.client.database = "rails"
   # config.client.hosts = ["localhost"]
   # config.client.port = 8086
-  # config.jwt_token = <orangesys_jwt_token>
+  # config.client.jwt_token = <orangesys_jwt_token>
 
   ## If you've setup user authentication (and activated it in the server
   ## config), you need to configure the credentials here.
