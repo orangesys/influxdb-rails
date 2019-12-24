@@ -26,7 +26,7 @@ This gem is designed for Rails 4.2+, Ruby 2.3+ and InfluxDB 0.9+.
 Add the gem to your `Gemfile`:
 
 ```console
-echo 'gem "influxdb-rails"' >>Gemfile
+echo 'gem "influxdb-rails", :git => "https://github.com/orangesys/influxdb-rails/", :ref => "master"' >>Gemfile
 bundle install
 ```
 
