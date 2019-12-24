@@ -192,7 +192,7 @@ InfluxDB::Rails.client.write_point "events",
 If you do that, it might be useful to add the current context to these custom
 data points which can get accessed with `InfluxDB::Rails.current.location`.
 
-See [influxdb-ruby](http://github.com/influxdata/influxdb-ruby) for a
+See [influxdb-ruby](http://github.com/orangesys/influxdb-ruby) for a
 full list of configuration options and detailed usage.
 
 ### Disabling hooks
@@ -206,7 +206,8 @@ end
 ```
 
 ## Demo
-Want to see this in action? Check out our [sample dashboard](https://github.com/influxdata/influxdb-rails/tree/master/sample-dashboard).
+Want to see this in action? Check out our [hello-rails-apm](https://github.com/gavinzhou/hello-rails-apm).
+Grafana Dashboard ID is 11031 10429 10428 .
 
 ## Frequently Asked Questions
 
@@ -273,7 +274,7 @@ If you setup a maximum retry value (`Integer === config.client.retry`),
 the client will try up to that amount of times to send the data to the server
 and (on final error) log an error and discard the values.
 
-[client docs]: https://github.com/influxdata/influxdb-ruby#retry
+[client docs]: https://github.com/orangesys/influxdb-ruby#retry
 
 ### What happens, when the InfluxDB client or this gem throws an exception? Will the user see 500 errors?
 
